@@ -1,0 +1,78 @@
+.container {
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "nav main aside"
+    "footer footer footer";
+    grid-template-rows: 1fr 4fr 2fr;
+    grid-template-columns: 1fr 8fr 2fr;
+    height: 100vh;
+    margin: 0;
+    }
+    
+    header {
+    grid-area: header;
+    background-color: rgb(49, 52, 68);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    }
+    
+    footer {
+    grid-area: footer;
+    background-color: rgb(49, 52, 68);
+    color: white;
+    text-align: center;
+    padding: 10px;
+    }
+    
+    nav {
+    grid-area: nav;
+    background-color: rgb(116, 101, 166);
+    color: white;
+    padding: 10px;
+    }
+    
+    main {
+    grid-area: main;
+    background-color: rgb(247, 147, 26);
+    color: rgb(49, 52, 68);
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    }
+    
+    aside {
+    grid-area: aside;
+    background-color: rgb(216, 27, 96);
+    color: white;
+    padding: 10px;
+    }
+    
+    .border {
+    border: 2px solid rgb(49, 52, 68);
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(49, 52, 68);
+    font-weight: bold;
+    }
+    
+    p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(98, 98, 98);
+    font-size: 1rem;
+    line-height: 1.5;
+    }
+    
+    a {
+    color: rgb(247, 147, 26);
+    text-decoration: none;
+    font-weight: bold;
+    }
+    
+    a:hover {
+    text-decoration: underline;
+    }
